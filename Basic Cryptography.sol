@@ -4,7 +4,8 @@ pragma solidity ^0.8.13;
 contract Cryptography {
 
     ///@notice I use abi.encodePacked over abi.encode as it results in smaller encode data.
-
+    ///@dev This code does not have any real use case. Just a collection of various cryptographic functions.
+    
     // Simple keccak256 (sha-3) encoding function
     function keccak256Foo(string memory _string) public pure returns(bytes32){
         return keccak256(abi.encodePacked(_string));
